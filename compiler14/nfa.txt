@@ -1,0 +1,15 @@
+s0 ---a---> s1
+s2 ---b---> s3
+s4 ---eps---> {s0, s2}
+{s1, s3} ---eps---> s5
+s6 ---eps---> {s4, s7}
+s5 ---eps---> {s7, s4}
+s8 ---a---> s9
+s10 ---b---> s11
+s12 ---b---> s13
+s11 ---eps---> s12
+s9 ---eps---> s10
+s7 ---eps---> s8
+
+Start state: s6
+Final states: s13 

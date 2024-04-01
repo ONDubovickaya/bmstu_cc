@@ -1,0 +1,21 @@
+digraph G {
+rankdir = LR;
+	"s6" -> "s4"[label="eps"];
+	"s6" -> "s7"[label="eps"];
+	"s4" -> "s0"[label="eps"];
+	"s4" -> "s2"[label="eps"];
+	"s7" -> "s8"[label="eps"];
+	"s0" -> "s1"[label="a"];
+	"s2" -> "s3"[label="b"];
+	"s8" -> "s9"[label="a"];
+	"s1" -> "s5"[label="eps"];
+	"s3" -> "s5"[label="eps"];
+	"s9" -> "s10"[label="eps"];
+	"s5" -> "s7"[label="eps"];
+	"s5" -> "s4"[label="eps"];
+	"s10" -> "s11"[label="b"];
+	"s11" -> "s12"[label="eps"];
+	"s12" -> "s13"[label="b"];
+	"start" -> "s6";
+	"s13" [shape="doublecircle"];
+}
