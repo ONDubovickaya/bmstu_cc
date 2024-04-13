@@ -1,0 +1,12 @@
+4
+A S A1 S1 
+2
+a b 
+6
+A -> S a A1
+S -> S1
+A1 -> a A1
+A1 -> eps
+S1 -> a A1 b S1
+S1 -> eps
+A

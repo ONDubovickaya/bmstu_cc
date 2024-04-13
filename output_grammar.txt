@@ -1,0 +1,11 @@
+3
+S E S1 
+4
+i t e a 
+5
+S -> i E t S S1
+S -> a
+E -> b
+S1 -> e S
+S1 -> eps
+S
