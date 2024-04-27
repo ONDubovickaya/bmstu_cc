@@ -1,0 +1,55 @@
+graph ""
+	{
+	label="{ x = A ! B & ~false; y = ~D; z = ~A ! C; w = C & ~true }"
+	n001 ;
+	n001 [label="program"] ;
+	n002 ;
+	n002 [label="x"];
+	n003 ;
+	n003 [label="y"] ;
+	n004 ;
+	n004 [label="z"] ;
+	n005 ;
+	n005 [label="w"] ;
+
+	n001 -- n002 ;
+	n001 -- n003 ;
+	n001 -- n004 ;
+	n001 -- n005 ;
+
+	n002 -- n006 ;
+	n006 -- n007 ;
+	n006 -- n008 ;
+	n008 -- n009 ;
+	n008 -- n010 ;
+	n010 -- n011 ;
+	n006 [label="!"] ;
+	n007 [label="A"] ;
+	n008 [label="&"] ;
+	n009 [label="B"] ;
+	n010 [label="~"] ;
+	n011 [label="f"] ;
+
+	n003 -- n012 ;
+	n012 -- n013 ;
+	n012 [label="~"] ;
+	n013 [label="D"] ;
+
+	n004 -- n014 ;
+	n014 -- n015 ;
+	n014 -- n016 ;
+	n015 -- n017 ;
+	n014 [label="!"] ;
+	n015 [label="~"] ;
+	n016 [label="C"] ;
+	n017 [label="A"] ;
+
+	n005 -- n018 ;
+	n018 -- n019 ;
+	n018 -- n020 ;
+	n020 -- n021 ;
+	n018 [label="&"] ;
+	n019 [label="C"] ;
+	n020 [label="~"] ;
+	n021 [label="t"] ;
+	}
