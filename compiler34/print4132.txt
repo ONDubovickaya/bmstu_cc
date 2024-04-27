@@ -1,0 +1,12 @@
+V L E S F Z A L1 E1 
+! & ~ a t f 
+V -> E L1 
+L -> E L1 
+E -> S E1 
+S -> ~ F | a | t | f 
+F -> a | t | f 
+Z -> t | f 
+A -> ~ | & | ! 
+L1 -> ! E L1 | eps 
+E1 -> & S E1 | eps 
+V

@@ -1,0 +1,14 @@
+V L E S F Z A P B M N H 
+! & ~ a t f { } ; 
+V -> L 
+L -> E | L ! E 
+E -> S | E & S 
+S -> F | ~ F 
+F -> Z | a 
+Z -> t | f 
+A -> ~ | & | ! 
+P -> B 
+B -> { M } 
+M -> N H 
+H -> ; N H | eps 
+P

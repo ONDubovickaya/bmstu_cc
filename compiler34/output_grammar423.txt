@@ -1,0 +1,30 @@
+14
+V L E S F Z A P B M N H L1 E1 
+9
+! & ~ a t f { } ; 
+24
+V -> E L1
+L -> E L1
+E -> S E1
+S -> ~ F
+S -> a
+S -> t
+S -> f
+F -> a
+F -> t
+F -> f
+Z -> t
+Z -> f
+A -> ~
+A -> &
+A -> !
+P -> { M }
+B -> { M }
+M -> N H
+H -> ; N H
+H -> eps
+L1 -> ! E L1
+L1 -> eps
+E1 -> & S E1
+E1 -> eps
+P

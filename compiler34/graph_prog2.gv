@@ -1,0 +1,56 @@
+graph ""
+	{
+	label="{ x = A ! B & ~false; y = ~D ; z = ~A ! C; w = C & ~true }"
+
+	subgraph cluster01
+	{
+	label="x"
+	n001 ;
+	n001 -- n002 ;
+	n001 -- n003 ;
+	n003 -- n004 ;
+	n003 -- n005 ;
+	n005 -- n006 ;
+	n001 [label="!"] ;
+	n002 [label="A"] ;
+	n003 [label="&"] ;
+	n004 [label="B"] ;
+	n005 [label="~"] ;
+	n006 [label="f"] ;
+	}
+
+	subgraph cluster02
+	{
+	label="y"
+	n007 ;
+	n007 -- n008 ;
+	n007 [label="~"] ;
+	n008 [label="D"] ;
+	}
+
+	subgraph cluster03
+	{
+	label="z"
+	n009 ;
+	n009 -- n010 ;
+	n009 -- n011 ;
+	n010 -- n012 ;
+	n009 [label="!"] ;
+	n010 [label="~"] ;
+	n011 [label="C"] ;
+	n012 [label="A"] ;
+	}
+
+	subgraph cluster04
+	{
+	label="w"
+	n013 ;
+	n013 -- n014 ;
+	n013 -- n015 ;
+	n015 -- n016 ;
+	n013 [label="&"] ;
+	n014 [label="C"] ;
+	n015 [label="~"] ;
+	n016 [label="t"] ;
+	}
+	}

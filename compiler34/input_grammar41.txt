@@ -1,0 +1,20 @@
+7
+V L E S F Z A 
+6
+! & ~ a t f 
+14
+V -> L
+L -> E
+L -> L ! E
+E -> S
+E -> E & S
+S -> F
+S -> ~ F
+F -> Z
+F -> a
+Z -> t
+Z -> f
+A -> ~
+A -> &
+A -> !
+V

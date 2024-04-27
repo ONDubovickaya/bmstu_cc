@@ -1,0 +1,10 @@
+V L E S F Z A
+! & ~ a t f
+V -> L
+L -> E | L ! E
+E -> S | E & S
+S -> F | ~ F
+F -> Z | a
+Z -> t | f
+A -> ~ | & | !
+V
