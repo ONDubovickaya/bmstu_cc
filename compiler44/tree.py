@@ -108,6 +108,11 @@ def create_tree(expression, polish_notation):
                 break
     #print(pairs)
 
+    for i in range(len(pairs)):
+        if len(pairs[i][1] == 1:
+            pairs[i] = (pairs[i][1], pairs[i][0])
+    #print(pairs)
+
     num = 1
 
     gv_file.write(f'n{str(num).zfill(3)} [label="{polish_notation}"] ;\n\t')
