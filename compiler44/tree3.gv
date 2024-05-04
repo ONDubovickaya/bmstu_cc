@@ -1,0 +1,17 @@
+graph ""
+	{
+	label="true & ~B ! A"
+	n001 [label="t B ~ & A !"] ;
+	n002 [label="A"] ;
+	n003 [label="t B ~ &"] ;
+	n004 [label="t"] ;
+	n005 [label="B ~"] ;
+	n006 [label="~"] ;
+	n007 [label="B"] ;
+	n001 -- n002;
+	n001 -- n003;
+	n003 -- n004;
+	n003 -- n005;
+	n005 -- n006;
+	n005 -- n007;
+	}

@@ -1,0 +1,13 @@
+graph ""
+	{
+	label="true & ~false"
+	n001 [label="t f ~ &"] ;
+	n002 [label="t"] ;
+	n003 [label="f ~"] ;
+	n004 [label="~"] ;
+	n005 [label="f"] ;
+	n001 -- n002;
+	n001 -- n003;
+	n003 -- n004;
+	n003 -- n005;
+	}
