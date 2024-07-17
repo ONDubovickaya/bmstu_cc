@@ -1,0 +1,45 @@
+int printf(const char *format,...);
+
+int main() {
+    int a;
+	printf("\n=====Start test assignment=====\n");
+	a = 1;
+	printf("a = %d\n", a);
+	a = a + 1;
+	printf("a = a + 1, a = %d\n", a);
+	a = a - 1;
+	printf("a = a - 1, a = %d\n", a);
+	a = a * 2;
+	printf("a = a * 2, a = %d\n", a);
+	a = a / 2;
+	printf("a = a / 2, a = %d\n", a);
+	a = 7;
+	a = a % 4;
+	printf("a = 7, a = a %% 4, a = %d\n", a);
+
+	int b;
+	printf("\n=====Start test operator=====\n");
+	b = 1;
+	printf("b = %d\n", b);
+	b += 1;
+	printf("b += 1, b = %d\n", b);
+	b -= 1;
+	printf("b -= 1, b = %d\n", b);
+	b *= 2;
+	printf("b *= 2, b = %d\n", b);
+	b /= 2;
+	printf("b /= 2, b = %d\n", b);
+	b = 7;
+	b %= 4;
+	printf("b = 7, b %%= 4, b = %d\n", b);
+
+	printf("\n=====Start arithmetic=====\n");
+	printf("23+5 = %d (wait 28)\n", 23+5);
+	printf("3*4 = %d (wait 12)\n", 3*4);
+	printf("22-(6-4) = %d (wait 20)\n", 22-(6-4));
+	printf("22/(6/3) = %d (wait 11)\n", 22/(6/3));
+	printf("1+(5-2)*4/(2+1) = %d (wait 5)\n", 1+(5-2)*4/(2+1));
+	printf("0+(1+23)/4*5*67-8+9 = %d (wait 2011)\n", 0+(1+23)/4*5*67-8+9);
+	printf("192/(3*8+4*(33/5))-5 = %d (wait -1)\n", 192/(3*8+4*(33/5))-5);
+	return 0;
+}

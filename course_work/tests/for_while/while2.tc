@@ -1,0 +1,22 @@
+int printf(const char *format,...);
+
+int main()
+{
+    printf("While with break and continue:\n");
+    int result = 1;
+    int i = 0;
+    while(i<20){
+        i++;
+        if((i%3)==0){
+            printf("continue!\n");
+            continue;
+        }else if(i>10){
+            printf("break!\n");
+            break;
+        }else{
+            result *= i;
+        }
+    }
+    printf("result=%d\n", result);
+    return 0;
+}

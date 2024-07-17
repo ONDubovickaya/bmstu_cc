@@ -1,0 +1,12 @@
+int scanf(const char * restrict format,...);
+int printf(const char *format,...);
+
+int main()
+{
+    printf("Please input number a (int values): ");
+    int a;
+    int c = 2;
+    scanf("%d", &a);
+    printf("a + c = %d\n", a+c);
+    return 0;
+}

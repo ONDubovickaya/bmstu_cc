@@ -1,0 +1,22 @@
+int printf(const char *format,...);
+
+int main() {
+    int x = -5;
+    int y = 17;
+
+    if (x > 0 && y > 0) {
+        printf("Both x and y are greater than 0\n");
+    } else if (x > 0) {
+        printf("x is greater than 0\n");
+    } else if (y > 0) {
+        printf("y is greater than 0\n");
+    } else {
+        printf("Both x and y are smaller than 0\n");
+    }
+
+    if (x < 10 || y < 10) {
+        printf("At least one of x or y is less than 10\n");
+    }
+
+    return 0;
+}

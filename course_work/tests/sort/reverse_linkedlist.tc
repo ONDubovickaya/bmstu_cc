@@ -1,0 +1,66 @@
+int printf(const char *format,...);
+
+int nullptr = 0;
+struct Node
+{
+    int data;
+    struct Node* next;
+};
+
+void addNode(struct Node* pre, struct Node* next)
+{
+    pre->next = next;
+}
+
+void reverseLinkedList(struct Node** head)
+{
+    struct Node* prev = nullptr;
+    struct Node* current = *head;
+    struct Node* next;
+
+    while (current != nullptr)
+    {
+        next = current->next;
+        current->next = prev;
+        prev = current;
+        current = next;
+    }
+    *head = prev;
+}
+
+int main()
+{
+    printf("\n=== Linked list ===\n");
+
+    struct Node n1, n2, n3;
+    n1.data = 3;
+    n1.next = nullptr;
+    n2.data = 9;
+    n2.next = nullptr;
+    n3.data = 27;
+    n3.next = nullptr;
+    addNode(&n1, &n2);
+    addNode(&n2, &n3);
+
+    struct Node* head = &n1;
+
+    printf("Original linked list:\n");
+    struct Node* cur = head;
+    do
+    {
+        printf(" data = %d\n", cur->data);
+        cur = cur->next;
+    }while(cur!=nullptr);
+
+    reverseLinkedList(&head);
+
+    printf("\nReversed linked list:\n");
+    cur = head;
+    do
+    {
+        printf(" data = %d\n", cur->data);
+        cur = cur->next;
+    }while(cur!=nullptr);
+
+    return 0;
+}

@@ -1,0 +1,25 @@
+int printf(const char *format,...);
+
+// Types test
+int main()
+{
+    float i=5.5666;
+    printf("float type: i=%f\n", i);
+
+    double i2 = 4.44435;
+    printf("double type (with 3 nums after dot): i2=%.3f\n",i2);
+
+    char j = 49;
+    printf("49 as char: j=%c\n", j);
+
+    int k = 5;
+    printf("int type: k=%d\n", k);
+
+    char s[5] = "5\t6\n";
+    printf("Massive of chars s: %s", s);
+
+    s[2] = 33;
+    printf("Remove s[2] with 33 as char: %s", s);
+
+    return 0;
+}

@@ -1,0 +1,16 @@
+int printf(const char *format,...);
+
+int main()
+{
+    for(int i=0, j=1; i<5; i++){
+        j *= 3;
+        if(i==2){
+            printf("for i=2 j=%d\n",j);
+            printf("break!\n");
+            break;
+        }
+        printf("for i=%d j=NONE\n",i);
+        printf("\n");
+    }
+    return 0;
+}
